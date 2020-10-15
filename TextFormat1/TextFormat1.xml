@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Texts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/youngseo/Desktop/TextFormat.xsd" version="1.0">
+    <TextObject RefFontID="ID000">
+        <basic_options textID="ID000">
+            <start_time>01:01:01.001</start_time>
+            <contents>contents0</contents>
+        </basic_options>
+        <text_options>
+            <display>display0</display>
+            <top>0</top>
+            <left>0</left>
+            <textDecoration>textDecoration0</textDecoration>
+            <textShadow>textShadow0</textShadow>
+            <letterSpacing>0</letterSpacing>
+            <wordSpacing>0</wordSpacing>
+            <lineHeight>0</lineHeight>
+            <textAlign>textAlign0</textAlign>
+        </text_options>
+        <font_options>
+            <color>color0</color>
+            <fontSize>0</fontSize>
+            <opacity>0</opacity>
+            <fontFamily>fontFamily0</fontFamily>
+            <fontStyle>fontStyle0</fontStyle>
+            <fontWeight>fontWeight0</fontWeight>
+            <textShadow>textShadow1</textShadow>
+        </font_options>
+        <motion_options>
+            <LineMotion LineID="ID001">
+                <direction>ltor</direction>
+                <length>0</length>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </LineMotion>
+            <LineMotion LineID="ID002">
+                <direction>ltor</direction>
+                <length>0</length>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </LineMotion>
+            <Circle CircleID="ID003">
+                <radius>0</radius>
+                <direction>clock</direction>
+                <start_angle>0</start_angle>
+                <end_angle>0</end_angle>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Circle>
+            <Circle CircleID="ID004">
+                <radius>0</radius>
+                <direction>clock</direction>
+                <start_angle>0</start_angle>
+                <end_angle>0</end_angle>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Circle>
+            <Rectangle RectangleID="ID005">
+                <length>0</length>
+                <direction>clock</direction>
+                <start_quadrant>0</start_quadrant>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rectangle>
+            <Rectangle RectangleID="ID006">
+                <length>0</length>
+                <direction>clock</direction>
+                <start_quadrant>0</start_quadrant>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rectangle>
+            <Rotation RotationID="ID007">
+                <angle>0</angle>
+                <pivot>center</pivot>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rotation>
+            <Rotation RotationID="ID008">
+                <angle>0</angle>
+                <pivot>center</pivot>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rotation>
+            <Shake RotationID="ID009">
+                <shake_count>0</shake_count>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Shake>
+            <Shake RotationID="ID010">
+                <shake_count>0</shake_count>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Shake>
+            <Opacity OpacityID="ID011">
+                <opacity>0</opacity>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Opacity>
+            <Opacity OpacityID="ID012">
+                <opacity>0</opacity>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Opacity>
+            <Scale ScaleID="ID013">
+                <scaleX>0</scaleX>
+                <scaleY>0</scaleY>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Scale>
+            <Scale ScaleID="ID014">
+                <scaleX>0</scaleX>
+                <scaleY>0</scaleY>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Scale>
+            <Apearance AppearanceID="ID015">
+                <mode>mode0</mode>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Apearance>
+            <Apearance AppearanceID="ID016">
+                <mode>mode1</mode>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Apearance>
+        </motion_options>
+        <opacity>opacity0</opacity>
+    </TextObject>
+    <TextObject RefFontID="ID013">
+        <basic_options textID="ID017">
+            <start_time>01:01:01.001</start_time>
+            <contents>contents1</contents>
+        </basic_options>
+        <text_options>
+            <display>display1</display>
+            <top>0</top>
+            <left>0</left>
+            <textDecoration>textDecoration1</textDecoration>
+            <textShadow>textShadow2</textShadow>
+            <letterSpacing>0</letterSpacing>
+            <wordSpacing>0</wordSpacing>
+            <lineHeight>0</lineHeight>
+            <textAlign>textAlign1</textAlign>
+        </text_options>
+        <font_options>
+            <color>color1</color>
+            <fontSize>0</fontSize>
+            <opacity>0</opacity>
+            <fontFamily>fontFamily1</fontFamily>
+            <fontStyle>fontStyle1</fontStyle>
+            <fontWeight>fontWeight1</fontWeight>
+            <textShadow>textShadow3</textShadow>
+        </font_options>
+        <motion_options>
+            <LineMotion LineID="ID018">
+                <direction>ltor</direction>
+                <length>0</length>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </LineMotion>
+            <LineMotion LineID="ID019">
+                <direction>ltor</direction>
+                <length>0</length>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </LineMotion>
+            <Circle CircleID="ID020">
+                <radius>0</radius>
+                <direction>clock</direction>
+                <start_angle>0</start_angle>
+                <end_angle>0</end_angle>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Circle>
+            <Circle CircleID="ID021">
+                <radius>0</radius>
+                <direction>clock</direction>
+                <start_angle>0</start_angle>
+                <end_angle>0</end_angle>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Circle>
+            <Rectangle RectangleID="ID022">
+                <length>0</length>
+                <direction>clock</direction>
+                <start_quadrant>0</start_quadrant>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rectangle>
+            <Rectangle RectangleID="ID023">
+                <length>0</length>
+                <direction>clock</direction>
+                <start_quadrant>0</start_quadrant>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rectangle>
+            <Rotation RotationID="ID024">
+                <angle>0</angle>
+                <pivot>center</pivot>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rotation>
+            <Rotation RotationID="ID025">
+                <angle>0</angle>
+                <pivot>center</pivot>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Rotation>
+            <Shake RotationID="ID026">
+                <shake_count>0</shake_count>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Shake>
+            <Shake RotationID="ID027">
+                <shake_count>0</shake_count>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Shake>
+            <Opacity OpacityID="ID028">
+                <opacity>0</opacity>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Opacity>
+            <Opacity OpacityID="ID029">
+                <opacity>0</opacity>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Opacity>
+            <Scale ScaleID="ID030">
+                <scaleX>0</scaleX>
+                <scaleY>0</scaleY>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Scale>
+            <Scale ScaleID="ID031">
+                <scaleX>0</scaleX>
+                <scaleY>0</scaleY>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Scale>
+            <Apearance AppearanceID="ID032">
+                <mode>mode2</mode>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Apearance>
+            <Apearance AppearanceID="ID033">
+                <mode>mode3</mode>
+                <offset>0</offset>
+                <offset>0</offset>
+                <top>0</top>
+                <top>0</top>
+                <left>0</left>
+                <left>0</left>
+            </Apearance>
+        </motion_options>
+        <opacity>opacity1</opacity>
+    </TextObject>
+    <Resources>
+        <ResourceItem ResourceID="ID034">
+            <ResourcePath>ResourcePath0</ResourcePath>
+            <ResourceType>font</ResourceType>
+        </ResourceItem>
+        <ResourceItem ResourceID="ID035">
+            <ResourcePath>ResourcePath1</ResourcePath>
+            <ResourceType>font</ResourceType>
+        </ResourceItem>
+    </Resources>
+</Texts>

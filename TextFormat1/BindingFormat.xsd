@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="BindingOption">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MotionBinding">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="repeat" type="xs:int"/>
+                            <xs:element name="duration" type="xs:float"/>
+                            <xs:element name="goback" type="xs:string"/>
+                            <xs:element name="direction" type="xs:string"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="TextBinding">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="lower_limit" type="xs:int">
+                                <xs:annotation>
+                                    <xs:documentation>글자수 하한선
+</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="upper_limit" type="xs:int"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

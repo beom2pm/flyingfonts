@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Texts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TextObject" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="basic_options">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="start_time" type="xs:time"/>
+                                        <xs:element name="contents" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="textID" type="xs:ID"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="text_options">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="display" type="xs:string"/>
+                                        <xs:element name="top" type="xs:float"/>
+                                        <xs:element name="left" type="xs:float"/>
+                                        <xs:element name="textDecoration" type="xs:string"/>
+                                        <xs:element name="textShadow" type="xs:string"/>
+                                        <xs:element name="letterSpacing" type="xs:float"/>
+                                        <xs:element name="wordSpacing" type="xs:float"/>
+                                        <xs:element name="lineHeight" type="xs:float"/>
+                                        <xs:element name="textAlign" type="xs:string"/>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="font_options">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="color" type="xs:string"/>
+                                        <xs:element name="fontSize" type="xs:float"/>
+                                        <xs:element name="opacity" type="xs:float"/>
+                                        <xs:element name="fontFamily" type="xs:string"/>
+                                        <xs:element name="fontStyle" type="xs:string"/>
+                                        <xs:element name="fontWeight" type="xs:string"/>
+                                        <xs:element name="textShadow" type="xs:string"/>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="motion_options">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name=" LineMotion" maxOccurs="unbounded"
+                                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element default="ltor" name="direction">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="ltor"/>
+                                                  <xs:enumeration value="rtol"/>
+                                                  <xs:enumeration value="dtou"/>
+                                                  <xs:enumeration value="utod"/>
+                                                  <xs:enumeration value="diag_ur"/>
+                                                  <xs:enumeration value="diag_ul"/>
+                                                  <xs:enumeration value="diag_dr"/>
+                                                  <xs:enumeration value="diag_dl"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="length" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" name="top"
+                                                  type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" name="left"
+                                                  type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="LineID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Circle" maxOccurs="unbounded"
+                                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="radius" type="xs:float"/>
+                                                  <xs:element default="clock" name="direction">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="clock"/>
+                                                  <xs:enumeration value="anti"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="start_angle" type="xs:float"/>
+                                                  <xs:element name="end_angle" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="CircleID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Rectangle" maxOccurs="unbounded"
+                                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="length" type="xs:float"/>
+                                                  <xs:element default="clock" name="direction">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="clock"/>
+                                                  <xs:enumeration value="anti"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="start_quadrant" type="xs:int"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="RectangleID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Rotation" maxOccurs="unbounded"
+                                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="angle" type="xs:float"/>
+                                                  <xs:element default="center" name="pivot">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="center"/>
+                                                  <xs:enumeration value="left"/>
+                                                  <xs:enumeration value="right"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="RotationID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Shake" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="shake_count" type="xs:int"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="RotationID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Opacity" maxOccurs="unbounded"
+                                            minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="opacity" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="OpacityID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Scale" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="scaleX" type="xs:float"/>
+                                                  <xs:element name="scaleY" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="ScaleID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0"
+                                            name="Apearance">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="mode" type="xs:string"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="1"
+                                                  name="offset" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="top" type="xs:float"/>
+                                                  <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="left" type="xs:float"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="AppearanceID" type="xs:ID"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="opacity" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>한 텍스트 객체에 대해 시간별 opacity 저장
+</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="RefFontID" type="xs:IDREF"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Resources">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" name="ResourceItem">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ResourcePath" type="xs:string"/>
+                                        <xs:element name="ResourceType">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="font"/>
+                                                  <xs:enumeration value="img"/>
+                                                  <xs:enumeration value="sound"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="ResourceID" type="xs:ID"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="1.0" name="version" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
