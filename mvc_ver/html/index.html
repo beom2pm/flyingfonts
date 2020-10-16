@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>폰트 날다</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <div>
+    <!-- 전체 메뉴바 -->
+    <nav class="navbar navbar-default" id="fullMenuBar_wrapper">
+      <div class="">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fullMenuBar_contents" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">폰트 날다</a>
+        </div>
+        <div class="navbar-collapse collapse" aria-expanded="true" id="fullMenuBar_contents">
+          <ul class="nav navbar-nav">
+            <!-- 리스트 동적생성하는 부분
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">프로젝트<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">프로젝트</li>
+                <li><a href="#">새 프로젝트 생성하기</a></li>
+                <li><a href="#">프로젝트 열기</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">템플릿</li>
+                <li><a href="#">새 템플릿 생성하기</a></li>
+                <li><a href="#">템플릿 불러오기</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">저장</li>
+                <li><a href="#">저장하기</a></li>
+                <li><a href="#">다른 이름으로 저장</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">삭제</li>
+                <li><a href="#">현재 템플릿 삭제</a></li>
+                <li><a href="#">현재 프로젝트 삭제</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">기타</li>
+                <li><a href="#">마이페이지로 돌아가기</a></li>
+                <li><a href="#">템플릿 내보내기</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">편집<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-header">실행</li>
+                <li><a href="#">실행 취소</a></li>
+                <li><a href="#">실행 복구</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">애니메이션</li>
+                <li><a href="#">템플릿 미리보기</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">편집</li>
+                <li><a href="#">텍스트 속성 편집하기</a></li>
+                <li><a href="#">모션 적용 편집하기</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">설정<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">간편도구 설정</a></li>
+                <li><a href="#">에디터모드 설정</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">도움말<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">튜토리얼 시작하기</a></li>
+                <li><a href="#">문의하기</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" style="padding: 10px 10px 0px 0px !important;"><span class="glyphicon glyphicon-remove" style="font-size: x-large;"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 간편 메뉴바 -->
+    <nav class="navbar navbar-default" id="favoriteMenuBar_wrapper">
+      <div class="navbar-collapse collapse" aria-expanded="true" id="favoriteMenuBar_contents">
+        <ul class="nav navbar-nav">
+          <li><a href="#" style="padding: 5px 0px 0px 10px !important; text-align: center;"><span class="glyphicon glyphicon-play-circle" style="font-size: x-large;"></span> <span style="display: block; font-size: x-small;">애니메이션 실행</span> </a></li>
+          <li><a href="#" style="padding: 10px 0px 0px 10px !important; text-align: center;"> <i class="fas fa-mouse-pointer fa-lg"></i> <span style="display: block; font-size: x-small;">텍스트 선택</span></a></li>
+          <li><a href="#" style="padding: 10px 0px 0px 10px !important; text-align: center;"> <span class="glyphicon glyphicon-text-size"></span> <span style="display: block; font-size: x-small;">텍스트속성 편집</span></a></li>
+          <li><a href="#" style="padding: 10px 0px 0px 10px !important; text-align: center;"> <i class="fas fa-magic fa-lg"></i> <span style="display: block; font-size: x-small;">모션적용 편집</span> </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" style="padding: 10px 10px 0px 0px !important;"><span class="glyphicon glyphicon-arrow-left" style="font-size: x-large;"></span></a></li>
+          <li><a href="#" style="padding: 10px 10px 0px 0px !important;"><span class="glyphicon glyphicon-arrow-right" style="font-size: x-large;"></span></a></li>
+          <li><a href="#" style="padding: 10px 10px 0px 10px !important;"><span class="glyphicon glyphicon-floppy-disk" style="font-size: x-large;"></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row1 ">
+    <div class="section panel panel-default col-xs-3">
+      <div class="panel-heading">새 프로젝트</div>
+      <div class="panel-body">
+        템플릿 리스트
+      </div>
+    </div>
+    <div class="section panel panel-default col-xs-3">
+      <div class="panel-heading">Tools</div>
+      <div class="panel-body">
+        도구함
+      </div>
+    </div>
+    <div class="section col-xs-6">
+      <div class="text_expand row">
+        <div class="col-md-2">
+          <span class="label label-info">텍스트확장</span>
+        </div>
+        <div class="min_number col-md-4">
+          <span class="col-md-4" style="min-width:fit-content; padding: 0rem !important;">최소 개수: </span>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="1">
+            <span class="input-group-btn btn-group-vertical">
+              <button class="btn btn-default number_increase" type="button"> <span class="glyphicon glyphicon-triangle-top"></span> </button>
+              <button class="btn btn-default number_decrease" type="button"> <span class="glyphicon glyphicon-triangle-bottom"></span> </button>
+            </span>
+          </div>
+        </div>
+        <div class="max_number col-md-4">
+          <div class="row">
+            <span class="col-md-4" style="min-width:fit-content; padding: 0rem !important;">최대 개수: </span>
+            <div class="input-group col-md-8">
+              <input type="text" class="form-control" placeholder="1">
+              <span class="input-group-btn btn-group-vertical">
+                <button class="btn btn-default number_increase" type="button"> <span class="glyphicon glyphicon-triangle-top"></span> </button>
+                <button class="btn btn-default number_decrease" type="button"> <span class="glyphicon glyphicon-triangle-bottom"></span> </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary">적용</button>
+        </div>
+      </div>
+      <div class="preview">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row2 ">
+    <div class="tabs">
+      <ul class="nav nav-tabs">
+        <li class="nav-item active">
+          <a class="nav-link active" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Selected</a>
+        </li>
+      </ul>
+    </div>
+    <div class="box row">
+      <div class="list col-md-2">
+
+      </div>
+      <div class="list col-md-2">
+      </div>
+
+      <div class="timediv col-md-8">
+        <div class="time_display">
+          0:00
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+        <div class="time_line">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/apps/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
