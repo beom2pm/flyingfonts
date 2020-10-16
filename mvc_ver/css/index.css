@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+}
+
+nav {
+  margin-bottom: 0rem !important;
+  border-radius: 0rem !important;
+}
+
+.navbar-default {
+  background-color: white !important;
+}
+
+.row {
+  margin: 0rem !important;
+}
+
+.row1 {
+  height: 50%;
+}
+
+.row1 .section{
+  border: 1px solid #e7e7e7;
+  height: 100%;
+  padding: 0rem !important;
+  border-radius: 0rem !important;
+}
+
+.row1 .panel {
+  margin-bottom: 0rem !important;
+}
+
+.panel-heading{
+  font-weight: bold;
+  padding: 5px !important;
+}
+
+.text_expand {
+  padding: 10px 0px;
+  border: 1px solid #ddd;
+}
+
+.text_expand .btn.number_increase, .text_expand .btn.number_decrease{
+  font-size: 7px !important;
+  padding: 0.1rem 0.5rem !important
+}
+
+.text_expand .label {
+  font-size: 100%;
+}
+
+.row2 {
+  height: 35%;
+  padding: 0px 5px;
+  clear: both;
+}
+
+.row2 .tabs {
+  height: 15%;
+}
+
+.row2 .tabs .nav-item.active a{
+  background-color: #555 !important;
+  color: white !important;
+}
+
+.row2 .box {
+  clear: both;
+  height: 85%;
+  background-color: #555;
+  padding: 0px 5px;
+}
+
+.box .list {
+  padding: 10px;
+  height: 100%;
+  background-color: #6a6a6a;
+  background-clip: content-box;
+}
+
+.timediv {
+  height: 100%;
+}
+
+.time_display {
+  color: green;
+}
+
+.progress {
+  height: 13px;
+  margin-bottom: 5px;
+}
+
+.progress-bar{
+  background-color: green !important;
+}
+
+.time_line {
+  height: 80%;
+  background-color: #6a6a6a;
+}
