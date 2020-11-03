@@ -2,6 +2,16 @@ html, body {
   height: 100%;
 }
 
+.width_middle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.height_middle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 nav {
   margin-bottom: 0rem !important;
   border-radius: 0rem !important;
@@ -11,22 +21,42 @@ nav {
   background-color: white !important;
 }
 
+#favoriteMenuBar_contents .flexible_ul li a{
+  padding: 10px 0px 0px 10px !important;
+  text-align: center;
+}
+
+#favoriteMenuBar_contents .flexible_ul .menu_subtitle {
+  display: block;
+  font-size: x-small;
+}
+
+.modal-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 1030 !important;
+  background-color: #000 !important;
+}
+
 .row {
   margin: 0rem !important;
 }
 
-.row1 {
+.middleContents {
   height: 50%;
 }
 
-.row1 .section{
+.middleContents .section{
   border: 1px solid #e7e7e7;
   height: 100%;
   padding: 0rem !important;
   border-radius: 0rem !important;
 }
 
-.row1 .panel {
+.middleContents .panel {
   margin-bottom: 0rem !important;
 }
 
@@ -35,8 +65,11 @@ nav {
   padding: 5px !important;
 }
 
-.text_expand {
-  padding: 10px 0px;
+.panel-body {
+  padding: 0 !important;
+}
+
+.section .text_expand {
   border: 1px solid #ddd;
 }
 
@@ -48,6 +81,54 @@ nav {
 .text_expand .label {
   font-size: 100%;
 }
+
+.min_number_label, .max_number_label {
+  min-width:fit-content;
+  padding: 0rem !important;
+  margin-top: 1rem;
+}
+
+.min_number_button input, .max_number_button input {
+  border-top-right-radius: 0 !important;
+}
+
+.min_number_button .number_increase, .max_number_button .number_increase {
+  border-top-right-radius: 4px !important;
+}
+
+.min_number_button .number_decrease, .max_number_button .number_decrease {
+  border-bottom-left-radius: 0 !important;
+}
+
+#popup .wrapper {
+  margin: 3rem 1rem;
+}
+
+
+#popup .control-label{
+  color: #777;
+}
+
+.template_unit {
+  width: 205px;
+}
+
+.template_unit .dropdown-menu li {
+  width: 205px;
+}
+
+.preview {
+  height: 90%;
+  display: flex;
+  overflow: auto;
+}
+
+
+.textObject {
+  display: table;
+  width: max-content;
+}
+
 
 .row2 {
   height: 35%;
@@ -98,4 +179,28 @@ nav {
 .time_line {
   height: 80%;
   background-color: #6a6a6a;
+}
+
+#popup .modal-dialog {
+  height: 100%;
+}
+
+#popup .modal-header {
+  background-color: rgb(26, 188, 156);
+  color: white;
+  font-weight: bolder;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#popup .modal-body {
+  padding: 3rem;
+}
+
+.new_template_name, .new_project_name {
+  border-radius: 4px !important;
+}
+
+#popup .alert {
+  margin: 1rem 0rem;
 }

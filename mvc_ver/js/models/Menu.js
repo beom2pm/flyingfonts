@@ -16,7 +16,7 @@ export default class Menu extends Observer {
         this._menuList.push(tempArr);
       } else {
         let tempList = this._menuList.find(item => item.title === data.parent);
-        tempList.list.push(data.title);
+        tempList.list.push(data);
       }
     }
   }
