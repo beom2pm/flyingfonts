@@ -9,7 +9,9 @@ export default class Observer extends Set {
 
   // 상태가 변경됐음을 알리는 함수
   notify() {
-    this.forEach(v => v.listen(this))
+    this.forEach((item, i) => {
+      item.listen(this);
+    });
   }
 
   // notify를 통해 변경사항을 받는 함수

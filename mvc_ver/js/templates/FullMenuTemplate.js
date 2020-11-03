@@ -3,14 +3,14 @@ export default class FullMenuTemplate {
   }
 
   ulTag(strings, title, items) {
-    let result;
+    let result = '';
     result = strings[0] + title + strings[1] + items + strings[2];
     return result;
   }
 
-  liTag(strings, item){
-    let result;
-    result = strings[0] + item + strings[1];
+  liTag(strings, title){
+    let result = '';
+    result = strings[0] + title + strings[1];
     return result;
   }
 
@@ -18,9 +18,10 @@ export default class FullMenuTemplate {
     let result = '';
     for (let menu of menuList){
       let title = menu.title;
-      let items;
+      let items = '';
       for (let item of menu.list) {
-        items += this.liTag`<li><a href="#">${item}</a></li>`;
+        let title = item.title;
+        items += this.liTag`<li><a href="#">${title}</a></li>`;
       }
       result += this.ulTag`<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">${title}<span class="caret"></span></a>

@@ -10,7 +10,14 @@ export default class FullMenuView extends View {
   }
 
   render(list) {
+    // html 렌더링
     this.ul.innerHTML = this.FullMenuTemplate.getUlTemplate(list);
+    // 이벤트 렌더링
+    let fullmenu_list = this.ul.querySelectorAll('li .dropdown-menu li a');
+    fullmenu_list.forEach((item, i) => {
+      item.onclick = () => this.controller.select(item.innerHTML);
+    });
+
   }
 
 }
